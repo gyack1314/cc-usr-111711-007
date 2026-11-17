@@ -6,6 +6,26 @@
   ],
   "documents": [
     {
+      "source": "business-office",
+      "document_id": "context-1",
+      "revision": "r1",
+      "received_at": "2026-11-09T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "context",
+          "id": "project",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "hub": "HUB-A",
+            "phase": "design",
+            "approved_budget": 400,
+            "estimated_capex": 320
+          }
+        }
+      ]
+    },
+    {
       "source": "supply-office",
       "document_id": "supply-1",
       "revision": "r1",
