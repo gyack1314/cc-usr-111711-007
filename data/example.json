@@ -1,0 +1,101 @@
+{
+  "period": "2026-11-20",
+  "known_at": [
+    "2026-11-12T00:00:00+00:00",
+    "2026-11-16T00:00:00+00:00"
+  ],
+  "documents": [
+    {
+      "source": "supply-office",
+      "document_id": "supply-1",
+      "revision": "r1",
+      "received_at": "2026-11-10T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "supply",
+          "id": "hub-capacity-1",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "product": "SAF",
+            "market": "hub-A",
+            "batch": "hub-capacity-1",
+            "quantity": 60,
+            "unit_cost": 4.8,
+            "intensity": 0.33,
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "claim_scope": "需求兑现时间、建设阶段与预算需要联动。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "buyer-office",
+      "document_id": "demand-1",
+      "revision": "r1",
+      "received_at": "2026-11-10T01:00:00+00:00",
+      "records": [
+        {
+          "kind": "demand",
+          "id": "regional-demand-1",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "product": "SAF",
+            "market": "hub-A",
+            "quantity": 80,
+            "priority": 1,
+            "required_certificate": "certified",
+            "start": "2026-11-01",
+            "end": "2026-12-31"
+          }
+        }
+      ]
+    },
+    {
+      "source": "certificate-office",
+      "document_id": "certificate-1",
+      "revision": "r1",
+      "received_at": "2026-11-11T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "certificate",
+          "id": "cert-hub-capacity-1",
+          "revision": "r1",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "batch": "hub-capacity-1",
+            "standard": "certified",
+            "state": "active",
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "quantity": 60
+          }
+        }
+      ]
+    },
+    {
+      "source": "certificate-office",
+      "document_id": "certificate-2",
+      "revision": "r1",
+      "received_at": "2026-11-15T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "certificate",
+          "id": "cert-hub-capacity-1",
+          "revision": "r2",
+          "valid_from": "2026-11-01",
+          "payload": {
+            "batch": "hub-capacity-1",
+            "standard": "certified",
+            "state": "suspended",
+            "start": "2026-11-01",
+            "end": "2026-12-31",
+            "quantity": 60
+          }
+        }
+      ]
+    }
+  ]
+}
